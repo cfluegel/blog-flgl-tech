@@ -1,5 +1,5 @@
 AUTHOR = 'Christoph Flügel'
-SITENAME = 'Journey through tech'
+SITENAME = 'blog.flgl.tech' 
 SITEURL = ''
 
 PATH = 'content'
@@ -16,13 +16,24 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Pelican', 'https://getpelican.com/'),
-         ('Python.org', 'https://www.python.org/'),)
+LINKS = ()
 
 # Social widget
-SOCIAL = (,)
+SOCIAL = ()
 
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+# Changes that I made after the Quickstart
+DELETE_OUTPUT_DIRECTORY = True
+THEME = "themes/simplegrey"
+
+PLUGIN_PATHS = ['plugins']
+PLUGINS = ['filetime_from_git']
+
+ARTICLE_URL = 'posts/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
+ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
+PAGE_URL = 'pages/{slug}/'
+PAGE_SAVE_AS = 'pages/{slug}/index.html'
