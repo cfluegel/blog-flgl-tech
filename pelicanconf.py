@@ -2,11 +2,12 @@ AUTHOR = 'Christoph Flügel'
 SITENAME = 'blog.flgl.tech' 
 SITEURL = ''
 
-PATH = 'content'
 
 TIMEZONE = 'Europe/Berlin'
 
 DEFAULT_LANG = 'de'
+
+PATH = 'content'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -19,9 +20,9 @@ AUTHOR_FEED_RSS = None
 LINKS = ()
 
 # Social widget
-SOCIAL = ()
+SOCIAL = (('github', 'https://github.com/cfluegel/'))
 
-DEFAULT_PAGINATION = 10
+DEFAULT_PAGINATION = 5
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
@@ -37,3 +38,13 @@ ARTICLE_URL = 'posts/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
 ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
 PAGE_URL = 'pages/{slug}/'
 PAGE_SAVE_AS = 'pages/{slug}/index.html'
+
+STATIC_PATHS = [ 
+        'images',
+        'extra',
+        ]
+
+EXTRA_PATH_METADATA = { 
+        'extra/robots.txt': {'path': 'robots.txt'},
+        'extra/favicon.ico': {'path': 'favicon.ico'},
+        }
