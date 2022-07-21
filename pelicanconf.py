@@ -20,7 +20,7 @@ AUTHOR_FEED_RSS = None
 LINKS = ()
 
 # Social widget
-SOCIAL = (('github', 'https://github.com/cfluegel/'))
+SOCIAL = (('github', 'https://github.com/cfluegel/'),)
 
 DEFAULT_PAGINATION = 5
 
