@@ -1,5 +1,6 @@
 title: Über
 lang: de 
+status: published
 
 Dieses Blog dient mir als Notizblock. Meine bisherigen analogen Notizen gehen mir zu häufig "verloren" 
 und ich hoffe mit einer digitalen Variante mehr erfolg zu haben. 
