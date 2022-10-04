@@ -21,8 +21,10 @@ make clean publish
 #VERSION=$(git log -1 --pretty=%h)
 #VERSION=$(date +%Y.%m.%d-%H%M)
 VERSION=$(date +%s)
-REPO="blogflgltech:"
-TAG="$REPO$VERSION"
-LATEST="${REPO}latest"
+REPO="cfluegel/blog-flgl-tech"
+TAG="$REPO:$VERSION"
+LATEST="${REPO}:latest"
 
 docker build -t "$TAG" -t "$LATEST" --build-arg VERSION="$VERSION" .
+
+docker push -a $REPO
