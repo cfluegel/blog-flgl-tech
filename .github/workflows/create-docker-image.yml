@@ -19,7 +19,7 @@ jobs:
 
       - name: Generate website content
         run: make publish
-        working_directory: ./pelican
+        working-directory: ./pelican
 
       - name: Login to DockerHub
         uses: docker/login-action@v2
