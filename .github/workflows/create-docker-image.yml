@@ -15,7 +15,7 @@ jobs:
 
       - name: Make sure everything is clear
         run: make clean
-        working_directory: ./pelican
+        working-directory: ./pelican
 
       - name: Generate website content
         run: make publish
