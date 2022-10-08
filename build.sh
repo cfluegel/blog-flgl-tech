@@ -25,6 +25,7 @@ REPO="cfluegel/blog-flgl-tech"
 TAG="$REPO:$VERSION"
 LATEST="${REPO}:latest"
 
-docker build -t "$TAG" -t "$LATEST" --build-arg VERSION="$VERSION" .
+# docker build -t "$TAG" -t "$LATEST" --build-arg VERSION="$VERSION" .
+docker build  -t "$LATEST" --build-arg VERSION="$VERSION" .
 
 docker push -a $REPO

@@ -1,0 +1,11 @@
+name: create-docker-image
+run-name: ${{ github.actor }} is learning GitHub Actions
+on: [push]
+jobs:
+  build-site:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: logikal-io/pip-install@v1.0.0
+        with:
+          requirements: pelican/requirements.txt
