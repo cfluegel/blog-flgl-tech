@@ -5,7 +5,31 @@ jobs:
   build-site:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: logikal-io/pip-install@v1.0.0
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install pelican requirements
+        uses: logikal-io/pip-install@v1.0.0
         with:
           requirements: pelican/requirements.txt
+
+      - name: Make sure everything is clear
+        run: make clean
+        working_directory: ./pelican
+
+      - name: Generate website content
+        run: make publish
+        working_directory: ./pelican
+
+      - name: Login to DockerHub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Build and push
+        uses: docker/build-push-action@v3
+        with:
+          context: "."
+          push: true
+          tags: cfluegel/blog-flgl-tech:latest
