@@ -30,8 +30,8 @@ jobs:
       - name: Docker Metadata action
         id: meta
         uses: docker/metadata-action@v4.0.1
-          images: |
-            cfluegel/blog-flgl-tech
+        with:
+          images: cfluegel/blog-flgl-tech
           tags: |
             type=raw,value=latest
             type=raw,value={{date 'YYYYMMDD'}}
