@@ -1,5 +1,5 @@
 name: create-docker-image
-run-name: ${{ github.actor }} is learning GitHub Actions
+run-name: Create a new Dockerimage with the content of the pelican static site generator
 on: [push]
 jobs:
   build-site:
@@ -27,9 +27,20 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
+      - name: Docker Metadata action
+        id: meta
+        uses: docker/metadata-action@v4.0.1
+          images: |
+            cfluegel/blog-flgl-tech
+          tags: |
+            type=raw,value=latest
+            type=raw,value={{date 'YYYYMMDD'}}
+            type=sha
+
+
       - name: Build and push
         uses: docker/build-push-action@v3
         with:
           context: "."
           push: true
-          tags: cfluegel/blog-flgl-tech:latest
+          tags: ${{ steps.meta.outputs.tags }}
