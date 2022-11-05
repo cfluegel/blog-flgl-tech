@@ -21,7 +21,7 @@ make clean publish
 #VERSION=$(git log -1 --pretty=%h)
 #VERSION=$(date +%Y.%m.%d-%H%M)
 VERSION=$(date +%s)
-REPO="cfluegel/blog-flgl-tech"
+REPO="cfluegel/website-blog-flgl-tech"
 TAG="$REPO:$VERSION"
 LATEST="${REPO}:latest"
 

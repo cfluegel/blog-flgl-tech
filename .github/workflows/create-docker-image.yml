@@ -34,7 +34,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4.0.1
         with:
-          images: cfluegel/blog-flgl-tech
+          images: cfluegel/website-blog-flgl-tech
           tags: |
             type=raw,value=latest
             type=raw,value={{date 'YYYYMMDD'}}
