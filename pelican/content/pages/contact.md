@@ -1,14 +1,10 @@
-lang: de 
-title: Kontakt 
+lang: de
+title: Kontakt
 status: published
 
-Bei Fragen oder Problemen können Sie sich an den folgenden E-Mail Adresse wenden. Ich werde 
-zeitnahe eine Antwort senden. 
+# Betreiber
 
-## Betreiber
+Christoph Flügel
 
-Christoph Flügel 
-
-E-Mail:  blog (at) flgl (.) tech 
-
+E-Mail:  blog (at) flgl (.) tech
 

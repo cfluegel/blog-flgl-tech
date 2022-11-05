@@ -1,18 +1,11 @@
 title: Über
-lang: de 
+lang: de
 status: published
 
-Dieses Blog dient mir als Notizblock. Meine bisherigen analogen Notizen gehen mir zu häufig "verloren" 
-und ich hoffe mit einer digitalen Variante mehr erfolg zu haben. 
+Dieses Blog dient mir als Notizblock in dem ich für mich relevante Informationen speichere. Alles rund um das Thema IT und Softwareentwicklung.
 
-Hierzu verwende ich Pelican als Static Site Generator und [Github](https://www.github.com/) zum Tracken der einzelnen Veränderungen.
+Ich benötige keine dynamische Webseite für die Darstellung von dem Inhalt weshalb ich mich für den Weg der statischen Webseitengenerierung entschieden habe. Es gibt inzwischen einige statische Webseitengeneratoren, aber die Wahl fiel auf Pelican. Ich hatte bereits in der Vergangenheit mit Pelican gearbeitet. Möglicherweise wechsel ich in der Zukunft noch einen der anderen Generatoren, aber das ist in der Zukunft.
 
-Das [Repository](https://github.com/cfluegel/blog-flgl-tech) ist öffentlich zugänglich und beinhaltet 
-aktuell 2 Branches. Ich möchte die Chance nutzen und zukünftig Github Actions für das automatische 
-Deployment nutzen. Der *Main* Branch stellt den aktuellen Zustand der Webseite da, bzw. soll zukünftig
-den Zustand zeigen. Der *Develop* Branch dient mir zum Arbeiten. 
+Zum Versionstracking nutze ich ein eigenes Repository bei [Github](https://www.github.com/) und ist unter [Repository](https://github.com/cfluegel/blog-flgl-tech) öffentlich erreichbar. Ursprünglich hatte ich überlegt zwei separate Branches zu nutzen. Diese Idee habe ich inzwischen verworfen und arbeite direkt auf dem Main Branch.
 
-Ich bin mir noch unschlüssig ob ich die Commits bei einem Merge in den *Main* Branch zusammenfasse, oder 
-ob ich alle Commits mit übernehme. Zur besseren Übersicht überlege ich jedoch an dem Zusammenfassen in 
-einen Merge Commit
-
+Ich nutze Github Actions um automatisiert ein Docker Imager zu erzeugen und es im Anschluss auf Dockerhub zu veröffentlichen. In Verbindung mit einem automatisierten Deployment ermöglicht es mir ein relativ schnelles ausrollen einer neuen Version. Das ist für dieses Blog natürlich eher nicht notwendig, aber es erspart mir weitere Zeit zu investieren.
