@@ -32,7 +32,7 @@ DELETE_OUTPUT_DIRECTORY = True
 THEME = "themes/simplegrey"
 
 PLUGIN_PATHS = ['plugins']
-# PLUGINS = ['filetime_from_git']
+PLUGINS = ['filetime_from_git']
 # PLUGINS = []
 
 ARTICLE_URL = 'posts/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
