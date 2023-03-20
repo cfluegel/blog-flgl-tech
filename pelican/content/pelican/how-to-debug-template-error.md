@@ -1,6 +1,7 @@
 title: Fehler in Pelican Templates debuggen
 status: published
 lang: de
+date: 2022-10-24 07:52:00 
 
 Ich habe mir das Theme, welches ich für diese Webseite nutze, bezüglich eingebundenen Fonts angeschaut. Hintergrund ist derzeit laufende DSGVO Abmahnwelle aufgrund eingebundener Fonts zu fremden Servern. [Heise berichtet](https://www.heise.de/news/DSGVO-Abmahnwelle-wegen-Google-Fonts-7206364.html). Google wird im Artikel genutzt, aber sicher zählt dies auch für andere Server von Fremdpersonen & -Firmen.
 

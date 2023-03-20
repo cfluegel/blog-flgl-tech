@@ -1,6 +1,7 @@
 title: Update running Docker container to latest image
 status: published
 lang: de
+date: 2022-10-25 07:28:00
 
 Seit kurzem nutze ich für einige Dienste intensiv die Möglichkeiten von Docker (Podman wäre hier als direkte Alternative zu benennen) und bin soweit auch zufrieden. Dazu wird es nun weitere Artikel geben.
 

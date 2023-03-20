@@ -1,6 +1,7 @@
 title: Über
 lang: de
 status: published
+date: 2022-11-05 09:44
 
 Dieses Blog dient mir als Notizblock in dem ich für mich relevante Informationen speichere. Alles rund um das Thema IT und Softwareentwicklung.
 

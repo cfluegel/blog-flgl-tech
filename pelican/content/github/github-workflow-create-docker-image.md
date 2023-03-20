@@ -1,6 +1,7 @@
 title: Github Workflow zum Erstellen von Docker Images nutzen
 status: published
 lang: de
+date: 2022-10-19 08:43
 
 Ich bin wahrlich nicht die erste Person die sich mit dem Thema beschäftigt und höchstwahrscheinlich gibt es auch effizientere Lösungen, aber ich bin am sprichwörtlichen Rom angekommen.
 

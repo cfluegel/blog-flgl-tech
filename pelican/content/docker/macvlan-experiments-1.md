@@ -1,6 +1,7 @@
 title: Experimente mit MacVLAN Netzwerk
 status: published
 lang: de
+date: 2022-12-09 10:28:00
 
 Docker richtet standardmäßig das Bridge Interface ```docker0``` ein. Mit diesem Interface kommunizieren die Docker Container mit der Außenwelt. Intern erhalten die Docker Container dann eine interne nicht geroutete IP aus der Bereich 172.17.0.0/16 und durch Freigabe von Ports erhält man dann Zugriff auf die jeweiligen Container.
 
