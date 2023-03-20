@@ -13,7 +13,7 @@ jobs:
         with:
           python-version: '3.9'
           cache: 'pip'
-      - run: pip install -r pelican/requirements.txt
+      - run: pip install -r requirements.txt
 
       - name: Make sure everything is clear
         run: make clean
