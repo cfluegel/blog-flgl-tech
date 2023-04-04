@@ -1,5 +1,5 @@
 AUTHOR = 'Christoph Flügel'
-SITENAME = 'blog.flgl.tech' 
+SITENAME = 'blog.flgl.tech'
 SITEURL = ''
 
 
@@ -40,12 +40,12 @@ ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
 PAGE_URL = 'pages/{slug}/'
 PAGE_SAVE_AS = 'pages/{slug}/index.html'
 
-STATIC_PATHS = [ 
+STATIC_PATHS = [
         'images',
         'extra',
         ]
 
-EXTRA_PATH_METADATA = { 
+EXTRA_PATH_METADATA = {
         'extra/robots.txt': {'path': 'robots.txt'},
         'extra/favicon.ico': {'path': 'favicon.ico'},
         }
