@@ -48,6 +48,7 @@ STATIC_PATHS = [
 EXTRA_PATH_METADATA = {
         'extra/robots.txt': {'path': 'robots.txt'},
         'extra/favicon.ico': {'path': 'favicon.ico'},
+        'extra/htaccess': {'path': '.htaccess'},
         }
 
 DEFAULT_METADATA = {
