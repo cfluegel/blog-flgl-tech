@@ -43,6 +43,7 @@ PAGE_SAVE_AS = 'pages/{slug}/index.html'
 STATIC_PATHS = [
         'images',
         'extra',
+        'files',
         ]
 
 EXTRA_PATH_METADATA = {
