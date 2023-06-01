@@ -1,7 +1,17 @@
 name: create-docker-image
 run-name: Create a new Dockerimage with the content of the pelican static site generator
-on: [push]
+
+on: 
+  push
+  
 jobs:
+jobs:
+  verified_commit_check:
+    name: Check for unverified commits
+    runs-on: ubuntu-latest
+    steps:
+      - uses: nadock/verified_commits_check@v1
+
   build-site:
     runs-on: ubuntu-latest
     steps:
