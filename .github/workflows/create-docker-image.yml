@@ -1,10 +1,8 @@
 name: create-docker-image
 run-name: Create a new Dockerimage with the content of the pelican static site generator
 
-on: 
-  push
+on: push
   
-jobs:
 jobs:
   verified_commit_check:
     name: Check for unverified commits
