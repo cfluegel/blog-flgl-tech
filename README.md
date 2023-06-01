@@ -1,14 +1,13 @@
 # blog-flgl-tech
 
-Dieses Repository dient als Grundlage für mein persönliches ["Blog"](https://blog.flgl.tech). Wobei Blog 
-nicht ganz passend ist. Es handelt sich eher um eine Art Notizbuch um meine Erfahrungen, Wissen und Fehler 
-aus der Welt der Technologie zu dokumentieren. Nicht für andere, sondern vielmehr für mich selbst. Falls 
-meine Notizen anderen ebenfalls behilflich sind, wunderbar, und ansonsten ist es auch gut. 
+Dieses Repository dient als Grundlage für mein persönliches ["Blog"](https://blog.flgl.tech). Wobei Blog
+nicht ganz passend ist. Es handelt sich eher um eine Art Notizbuch um meine Erfahrungen, Wissen und Fehler
+aus der Welt der Technologie zu dokumentieren. Hauptsächlich für mich, aber falls andere die Notizen ebenfalls hilfreich finden ist das natürlich noch viel besser.
 
-Ich will bewusst keine dynamische Webseite für den Inhalt und weil ich mich außerdem mit Pelican 
-beschäftigen wollte, nutze ich diese Chance um mich zusätzlich noch mit Github Actions vertraut zu machen. 
+Für den Inhalt ist definitiv keine dynamische Webseite (z.B. mit PHP) notwendig. Außerdem sorgen dynamische Webseiten gleich für mehr Komplexität und mögliche Sicherheitsprobleme. Deshalb hab ich mich für die Nutzung eines Static Site Generators entschieden. Ein kleiner Nebeneffekt ist das ich mich hierdurch gleich mit Github Actions beschäftigen konnte und hierdurch Erfahrung bei der automatischen Genenerierung von Docker Images machen konnte.
 
-## Todo für Github Actions 
-* Regelmäßig testweise den Content neugenerieren 
-* Bei Push auf den **Main** Branch einen automatischen Upload auf den Server durchführen 
 
+# Todo für Github Actions
+* ~~Regelmäßig testweise den Content neugenerieren~~: bei mehr Contributoren wäre es sicher nützlich, so eher nicht
+* ~~Bei Push auf den **Main** Branch einen automatischen Upload auf den Server durchführen~~
+  Watchtower aktualisiert regelmäßig (alle 6 Stunden) falls eine neue Version existiert
