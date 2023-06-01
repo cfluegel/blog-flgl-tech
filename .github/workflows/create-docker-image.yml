@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: nadock/verified_commits_check@v1
 
-  build-site:
+  build-docker-image:
     runs-on: ubuntu-latest
     needs: verified_commit_check
     steps:
