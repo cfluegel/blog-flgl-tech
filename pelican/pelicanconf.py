@@ -55,3 +55,8 @@ EXTRA_PATH_METADATA = {
 DEFAULT_METADATA = {
         'status': 'draft',
         }
+
+MARKDOWN = {
+        'extension_configs': {},
+        # 'output_format': 'html',
+}
