@@ -57,6 +57,11 @@ DEFAULT_METADATA = {
         }
 
 MARKDOWN = {
-        'extension_configs': {},
-        # 'output_format': 'html',
+        'extension_configs': {
+ #            "markdown.extensions.codehilite": {"css_class": "highlight"},
+            "markdown.extensions.extra": {},
+            "markdown.extensions.meta": {},
+            "markdown.extensions.toc": {"title": "Table of Contents"},
+        },
+        'output_format': 'html5',
 }
